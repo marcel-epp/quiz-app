@@ -57,6 +57,16 @@ body {
   right: 25px;
 }
 
+.card-bookmark i:hover {
+  rotate: 10deg;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.card-bookmark .fa-bookmark:before {
+  background-color: var(--color-1);
+}
+
 .card-question {
   color: var(--color-2);
   margin: 25px 0px;
