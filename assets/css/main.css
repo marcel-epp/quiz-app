@@ -140,6 +140,10 @@ body {
   display: block;
 }
 
+.nav-link-active {
+  background-color: var(--color-3);
+}
+
 .nav-link:hover,
 .nav-link:focus {
   /*color: var(--color-3);*/
