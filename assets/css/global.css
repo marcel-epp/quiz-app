@@ -1,0 +1,17 @@
+:root {
+  --color-1: #ffffff;
+  --color-2: #d9534f;
+  --color-3: #61e786;
+  --max-width: 700px;
+  --max-width-margin: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.fullresimage {
+  width: 100%;
+}

@@ -1,0 +1,72 @@
+/* card */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid var(--color-2);
+  margin: 25px 0px;
+  padding: 15px;
+}
+
+.card-bookmark {
+  color: var(--color-2);
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+
+.card-bookmark i:hover {
+  rotate: 10deg;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.card-bookmark .fa-bookmark:before {
+  background-color: var(--color-1);
+}
+
+.card-question {
+  color: var(--color-2);
+  margin: 25px 0px;
+  align-self: center;
+}
+
+.card-button {
+  max-width: 200px;
+  color: var(--color-1);
+  background-color: var(--color-2);
+  border-color: var(--color-2);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 25px 0px;
+  align-self: center;
+}
+
+.card-answer {
+  color: var(--color-1);
+  background-color: var(--color-2);
+  margin: 25px 0px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  display: none;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card-tags-links {
+  color: var(--color-1);
+  background-color: var(--color-2);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 6px;
+}
