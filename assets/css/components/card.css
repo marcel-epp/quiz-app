@@ -55,6 +55,10 @@
   display: none;
 }
 
+.card-answer-visible {
+  display: block;
+}
+
 .card-tags {
   display: flex;
   flex-wrap: wrap;

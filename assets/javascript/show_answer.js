@@ -1,5 +1,8 @@
-const cardButton = document.querySelector('[data-js="card-button"]');
+const answerBoxes = document.querySelectorAll('[data-js="card-answer"]');
+const cardButtons = document.querySelectorAll('[data-js="card-button"]');
 
-cardButton.addEventListener("click", () => {
-  console.log("One Cardbutton is clicked!");
+cardButtons.forEach(function (cardButton) {
+  cardButton.addEventListener("click", () => {
+    cardButton.nextElementSibling.classList.toggle("card-answer-visible");
+  });
 });
