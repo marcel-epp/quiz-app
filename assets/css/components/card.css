@@ -46,6 +46,11 @@
   align-self: center;
 }
 
+.card-button-open {
+  background-color: var(--color-3);
+  border-color: var(--color-3);
+}
+
 .card-answer {
   color: var(--color-1);
   background-color: var(--color-2);
