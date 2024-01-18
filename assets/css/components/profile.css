@@ -12,6 +12,7 @@
 .profile-settings {
   flex-direction: column;
   margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 .profile-settings-options {
