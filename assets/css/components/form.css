@@ -1,0 +1,27 @@
+.question__fieldset,
+.question__fieldset__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.question__fieldset {
+  padding: 20px 85px;
+}
+
+.question__fieldset__item {
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.question__fieldset__item__submit {
+  max-width: 200px;
+  color: var(--color-1);
+  background-color: var(--color-2);
+  border-color: var(--color-2);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 25px 0px;
+  align-self: center;
+}

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/assets/css/global.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script src="/assets/javascript/show_answer.js" defer></script>
-    <title>The Quizonator - Bookmarks</title>
+    <title>The Quizonator - Add a question</title>
   </head>
   <body>
     <header class="header">
@@ -19,36 +19,33 @@
       </div>
     </header>
     <main>
-      <div class="card">
-        <span class="card-bookmark">
-          <i class="fa-solid fa-bookmark fa-2xl" data-js="card-bookmark-icon"></i>
-        </span>
-        <h2 class="card-question">Lorem Impsum dolor sit?</h2>
-        <button type="button" class="card-button" data-js="card-button">Show Answer</button>
-        <div class="card-answer" data-js="card-answer">
-          <p>... that is the answer box.</p>
-        </div>
-        <div class="card-tags">
-          <a class="card-tags-links" href="#">#html</a>
-          <a class="card-tags-links" href="#">#flexbox</a>
-          <a class="card-tags-links" href="#">#css</a>
-        </div>
-      </div>
-      <div class="card">
-        <span class="card-bookmark">
-          <i class="fa-solid fa-bookmark fa-2xl" data-js="card-bookmark-icon"></i>
-        </span>
-        <h2 class="card-question">Lorem Impsum dolor sit?</h2>
-        <button type="button" class="card-button" data-js="card-button">Show Answer</button>
-        <div class="card-answer" data-js="card-answer">
-          <p>... that is the answer box.</p>
-        </div>
-        <div class="card-tags">
-          <a class="card-tags-links" href="#">#html</a>
-          <a class="card-tags-links" href="#">#flexbox</a>
-          <a class="card-tags-links" href="#">#css</a>
-        </div>
-      </div>
+      <form class="question__form">
+        <fieldset class="question__fieldset">
+          <div class="question__fieldset__item">
+            <label for="question__fieldset__item__question">Your question: *</label>
+            <textarea
+              rows="4"
+              name="question__fieldset__item__question"
+              id="question__fieldset__item__question"
+              required></textarea>
+          </div>
+          <div class="question__fieldset__item">
+            <label for="question__fieldset__item__answer">Your answer: *</label>
+            <textarea
+              rows="4"
+              name="question__fieldset__item__answer"
+              id="question__fieldset__item__answer"
+              required></textarea>
+          </div>
+          <div class="question__fieldset__item">
+            <label for="question__fieldset__item__tag">Tag: *</label>
+            <input type="text" id="question__fieldset__item__tag" name="question__fieldset__item__tag" />
+          </div>
+          <div class="question__fieldset__item">
+            <button type="submit" class="question__fieldset__item__submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
     </main>
     <footer class="footer">
       <div class="footer-inner">
@@ -60,12 +57,12 @@
               </a>
             </li>
             <li>
-              <a class="nav-link nav-link-active" href="bookmarks.html">
+              <a class="nav-link" href="bookmarks.html">
                 <i class="fa-solid fa-bookmark fa-xl"></i>
               </a>
             </li>
             <li>
-              <a class="nav-link" href="form.html">
+              <a class="nav-link nav-link-active" href="form.html">
                 <i class="fa-solid fa-circle-plus fa-xl"></i>
               </a>
             </li>
