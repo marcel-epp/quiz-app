@@ -60,7 +60,11 @@
   display: none;
 }
 
-.card-answer-visible {
+/*.card-answer-visible {
+  display: block;
+}*/
+
+.hidden {
   display: block;
 }
 

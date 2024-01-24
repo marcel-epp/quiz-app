@@ -5,9 +5,9 @@ const cardBookmarksIcons = document.querySelectorAll('[data-js="card-bookmark-ic
 // show the answer box on click, hide the answer box on click
 cardButtons.forEach(function (cardButton) {
   cardButton.addEventListener("click", () => {
-    cardButton.nextElementSibling.classList.toggle("card-answer-visible");
+    cardButton.nextElementSibling.classList.toggle("hidden");
     if (cardButton.innerHTML === "Show Answer") {
-      cardButton.innerHTML = "Close Answer";
+      cardButton.innerHTML = "Hide Answer";
       cardButton.classList.add("card-button-open");
     } else {
       cardButton.innerHTML = "Show Answer";
