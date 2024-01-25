@@ -13,6 +13,13 @@
   margin-top: 15px;
 }
 
+#question__fieldset__item__question,
+#question__fieldset__item__answer,
+#question__fieldset__item__tag {
+  padding: 10px;
+  border-radius: 4px;
+}
+
 .question__fieldset__item__submit {
   max-width: 200px;
   color: var(--color-1);
