@@ -1,9 +1,33 @@
 const formQuestion = document.querySelector('[data-js="question__form"]');
 const formQuestionBox = document.querySelector('[data-js="question__fieldset__item__question"]');
+const formQuestionBoxCharactersLeft = document.querySelector(
+  '[data-js="question__fieldset__item__questioncharacters"]'
+);
 const formAnswerBox = document.querySelector('[data-js="question__fieldset__item__answer"]');
+const formAnswerBoxCharactersLeft = document.querySelector('[data-js="question__fieldset__item__answercharacters"]');
 const formTagBox = document.querySelector('[data-js="question__fieldset__item__tag"]');
 const formSubmitButton = document.querySelector('[data-js="question__fieldset__item__submit"]');
 
+// check the lenght of the question and the answer box text
+
+const checkCharacterLenght = (value1, value2) => {
+  value1.innerHTML = `${150 - value2.value.length} characters left`;
+  if (value1.innerHTML === "0 characters left") {
+    value1.classList.add("question__fieldset__item__characters--red");
+  } else {
+    value1.classList.remove("question__fieldset__item__characters--red");
+  }
+};
+
+formQuestionBox.addEventListener("input", () => {
+  checkCharacterLenght(formQuestionBoxCharactersLeft, formQuestionBox);
+});
+
+formAnswerBox.addEventListener("input", () => {
+  checkCharacterLenght(formAnswerBoxCharactersLeft, formAnswerBox);
+});
+
+// submit and create a new card
 formQuestion.addEventListener("submit", (event) => {
   event.preventDefault();
 
