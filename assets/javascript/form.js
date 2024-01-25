@@ -1,17 +1,19 @@
 const formQuestion = document.querySelector('[data-js="question__form"]');
 const formQuestionBox = document.querySelector('[data-js="question__fieldset__item__question"]');
+const formQuestionBoxMaxlength = formQuestionBox.getAttribute("maxlength");
 const formQuestionBoxCharactersLeft = document.querySelector(
   '[data-js="question__fieldset__item__questioncharacters"]'
 );
 const formAnswerBox = document.querySelector('[data-js="question__fieldset__item__answer"]');
+const formAnswerBoxMaxlength = formAnswerBox.getAttribute("maxlength");
 const formAnswerBoxCharactersLeft = document.querySelector('[data-js="question__fieldset__item__answercharacters"]');
 const formTagBox = document.querySelector('[data-js="question__fieldset__item__tag"]');
 const formSubmitButton = document.querySelector('[data-js="question__fieldset__item__submit"]');
 
 // check the lenght of the question and the answer box text
 
-const checkCharacterLenght = (value1, value2) => {
-  value1.innerHTML = `${150 - value2.value.length} characters left`;
+const checkCharacterLenght = (value1, value2, value3) => {
+  value1.innerHTML = `${value2 - value3.value.length} characters left`;
   if (value1.innerHTML === "0 characters left") {
     value1.classList.add("question__fieldset__item__characters--red");
   } else {
@@ -20,11 +22,11 @@ const checkCharacterLenght = (value1, value2) => {
 };
 
 formQuestionBox.addEventListener("input", () => {
-  checkCharacterLenght(formQuestionBoxCharactersLeft, formQuestionBox);
+  checkCharacterLenght(formQuestionBoxCharactersLeft, formQuestionBoxMaxlength, formQuestionBox);
 });
 
 formAnswerBox.addEventListener("input", () => {
-  checkCharacterLenght(formAnswerBoxCharactersLeft, formAnswerBox);
+  checkCharacterLenght(formAnswerBoxCharactersLeft, formAnswerBoxMaxlength, formAnswerBox);
 });
 
 // submit and create a new card
