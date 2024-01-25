@@ -1,4 +1,4 @@
-const answerBoxes = document.querySelectorAll('[data-js="card-answer"]');
+//const answerBoxes = document.querySelectorAll('[data-js="card-answer"]');
 const cardButtons = document.querySelectorAll('[data-js="card-button"]');
 const cardBookmarksIcons = document.querySelectorAll('[data-js="card-bookmark-icon"]');
 
@@ -18,7 +18,6 @@ cardButtons.forEach(function (cardButton) {
 
 cardBookmarksIcons.forEach(function (cardBookmarkIcon) {
   cardBookmarkIcon.addEventListener("click", () => {
-    console.log(cardBookmarkIcon);
     if (cardBookmarkIcon.classList.contains("fa-regular")) {
       cardBookmarkIcon.classList.remove("fa-regular");
       cardBookmarkIcon.classList.add("fa-solid");
