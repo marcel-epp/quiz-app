@@ -11,7 +11,7 @@ const formTagBox = document.querySelector('[data-js="question__fieldset__item__t
 const formSubmitButton = document.querySelector('[data-js="question__fieldset__item__submit"]');
 
 // check the lenght of the question and the answer box text
-
+// value1 = first box, value2 = max lenght, value3 = second box
 const checkCharacterLenght = (value1, value2, value3) => {
   value1.innerHTML = `${value2 - value3.value.length} characters left`;
   if (value1.innerHTML === "0 characters left") {
