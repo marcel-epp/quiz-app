@@ -24,6 +24,15 @@
   border: 2px solid var(--color-2);
 }
 
+.question__fieldset__item__characters {
+  align-self: end;
+  font-size: 12px;
+}
+
+.question__fieldset__item__characters--red {
+  color: var(--color-2);
+}
+
 .question__fieldset__item__submit {
   max-width: 200px;
   color: var(--color-1);
